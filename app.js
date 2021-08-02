@@ -7,7 +7,7 @@ const port = process.env.PORT || 8080;
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/plain');
-  res.end('Hola Mundo');
+  res.end('Ejemplo Node.js en Beanstalk, ejecutando en http://${hostname}:${port}');
 });
 
 server.listen(port, hostname, () => {
